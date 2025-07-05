@@ -2,49 +2,57 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { Loading, Notify } from 'quasar'
 import { searchCharacter, fetchCharacterDetails } from 'src/api/dnf'
+import { getCharacter, saveCharacter } from 'src/utils/db'
 
 export const useDnfStore = defineStore('dnf', () => {
   const characters = ref([])
 
   async function fetchCustomCharacters(serverId, characterNames) {
-    if (!characterNames || characterNames.length === 0) {
-      Notify.create({ type: 'warning', message: '조회할 캐릭터가 없습니다.' })
-      return
-    }
-
-    Loading.show({ message: '캐릭터 정보를 조회하는 중...' })
-    characters.value = []
+    Loading.show({ message: '캐릭터 정보를 업데이트하는 중...' })
 
     try {
-      // 1. 기본 캐릭터 정보 병렬 조회
-      const searchPromises = characterNames.map((name) => searchCharacter(serverId, name))
-      const basicInfos = (await Promise.all(searchPromises)).filter((char) => char)
+      const promises = characterNames.map(async (name) => {
+        // 1. 캐릭터 이름으로 최신 기본 정보 조회 (레벨, 명성 등)
+        const basicInfo = await searchCharacter(serverId, name)
+        if (!basicInfo) return null
 
-      if (basicInfos.length === 0) {
-        throw new Error('유효한 캐릭터를 찾을 수 없습니다.')
-      }
+        // 2. IndexedDB에서 캐시된 상세 정보 확인
+        let details = await getCharacter(basicInfo.characterId)
 
-      // 2. 각 캐릭터의 상세 정보(장비, 아바타 등) 병렬 조회
-      const detailPromises = basicInfos.map((char) =>
-        fetchCharacterDetails(serverId, char.characterId)
-      )
-      const detailInfos = await Promise.all(detailPromises)
+        // 3. 캐시가 없거나 만료되었으면 API로 상세 정보 새로 조회
+        if (!details) {
+          console.log(`[API] ${basicInfo.characterName} 님의 상세 정보를 서버에서 새로고침합니다.`);
+          details = await fetchCharacterDetails(serverId, basicInfo.characterId)
+        } else {
+          console.log(`[Cache] ${basicInfo.characterName} 님의 상세 정보를 로컬 DB에서 불러왔습니다.`);
+        }
 
-      // 3. 기본 정보와 상세 정보 합치기
-      characters.value = basicInfos.map((basicInfo, index) => ({
-        ...basicInfo,
-        ...detailInfos[index],
-      }))
+        // 4. 최신 기본 정보와 (캐시되거나 새로 가져온) 상세 정보를 합침
+        const fullCharacterData = {
+          ...details, // 상세 정보가 먼저 오고
+          ...basicInfo, // 최신 기본 정보로 덮어쓰기 (fame, level 등)
+          characterImageURL: `https://img-api.neople.co.kr/df/servers/${serverId}/characters/${basicInfo.characterId}?zoom=1`,
+        };
+
+        // 5. 최종 데이터를 IndexedDB에 저장 (캐시 업데이트)
+        await saveCharacter(fullCharacterData);
+
+        return fullCharacterData;
+      })
+
+      const results = (await Promise.all(promises)).filter(c => c)
+      characters.value = results
 
       Notify.create({
         type: 'positive',
-        message: `${characters.value.length}명의 캐릭터 정보를 성공적으로 불러왔습니다.`,
+        message: `${results.length}명의 캐릭터 정보를 성공적으로 업데이트했습니다.`,
       })
+
     } catch (error) {
       console.error(error)
       Notify.create({
         type: 'negative',
-        message: error.message || '정보 조회 중 오류가 발생했습니다.',
+        message: error.message || '정보 업데이트 중 오류가 발생했습니다.',
       })
     } finally {
       Loading.hide()

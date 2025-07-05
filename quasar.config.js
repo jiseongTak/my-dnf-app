@@ -80,6 +80,13 @@ export default defineConfig((/* ctx */) => {
           target: 'https://api.neople.co.kr',
           changeOrigin: true, // 대상 서버의 출처(origin)를 바꾸도록 설정합니다.
         },
+        // 이미지 API를 위한 프록시 규칙 추가
+        '/img-api': {
+          target: 'https://img-api.neople.co.kr',
+          changeOrigin: true,
+          // '/img-api/df/...' 경로를 '/df/...'로 바꿔서 실제 서버에 요청
+          rewrite: (path) => path.replace(/^\/img-api/, ''),
+        }
       },
     },
 
