@@ -1,65 +1,45 @@
 import { defineStore } from 'pinia'
-import { api } from 'boot/axios'
 import { ref } from 'vue'
 import { Loading, Notify } from 'quasar'
+import { searchCharacter, fetchCharacterDetails } from 'src/api/dnf'
 
 export const useDnfStore = defineStore('dnf', () => {
-  const customCharacters = ref([]) // 사용자 정의 캐릭터 목록을 저장할 상태
+  const characters = ref([])
 
-  // 지정된 캐릭터 목록의 정보를 가져옵니다.
-  async function fetchCustomCharacters(server, characterNames) {
+  async function fetchCustomCharacters(serverId, characterNames) {
     if (!characterNames || characterNames.length === 0) {
       Notify.create({ type: 'warning', message: '조회할 캐릭터가 없습니다.' })
       return
     }
 
     Loading.show({ message: '캐릭터 정보를 조회하는 중...' })
-    customCharacters.value = [] // 이전 데이터 초기화
+    characters.value = []
 
     try {
-      // 1. 각 캐릭터의 ID를 동시에 조회합니다.
-      const idPromises = characterNames.map((name) =>
-        api.get(`/df/servers/${server}/characters`, { params: { characterName: name, wordType: 'match' } })
-      )
-      const idResponses = await Promise.all(idPromises)
+      // 1. 기본 캐릭터 정보 병렬 조회
+      const searchPromises = characterNames.map((name) => searchCharacter(serverId, name))
+      const basicInfos = (await Promise.all(searchPromises)).filter((char) => char)
 
-      // API 응답에서 캐릭터 ID만 추출 (찾지 못한 경우 필터링)
-      const charactersWithId = idResponses
-        .map((res) => res.data.rows[0])
-        .filter((char) => char) // 캐릭터를 찾지 못한 경우(undefined) 목록에서 제외
-
-      if (charactersWithId.length === 0) {
+      if (basicInfos.length === 0) {
         throw new Error('유효한 캐릭터를 찾을 수 없습니다.')
       }
 
-      // 2. 조회된 캐릭터들의 장비 정보를 동시에 가져옵니다.
-      Loading.show({ message: '장비 정보를 불러오는 중...' })
-      const equipmentPromises = charactersWithId.map((char) =>
-        api.get(`/df/servers/${server}/characters/${char.characterId}/equip/equipment`)
+      // 2. 각 캐릭터의 상세 정보(장비, 아바타 등) 병렬 조회
+      const detailPromises = basicInfos.map((char) =>
+        fetchCharacterDetails(serverId, char.characterId)
       )
-      const equipmentResponses = await Promise.all(equipmentPromises)
+      const detailInfos = await Promise.all(detailPromises)
 
-      // 3. 최종적으로 캐릭터 정보와 장비 정보를 합쳐서 상태에 저장합니다.
-      customCharacters.value = charactersWithId.map((char, index) => {
-        // 장비 정보에 아이템 이미지 URL 추가
-        const equipmentWithImage = equipmentResponses[index].data.equipment.map(equip => ({
-          ...equip,
-          itemImageURL: `https://img-api.neople.co.kr/df/items/${equip.itemId}`
-        }));
-
-        return {
-          ...char,
-          // 캐릭터 이미지 URL 추가 (zoom=1)
-          characterImageURL: `https://img-api.neople.co.kr/df/servers/${server}/characters/${char.characterId}?zoom=1`,
-          equipment: equipmentWithImage,
-        }
-      })
+      // 3. 기본 정보와 상세 정보 합치기
+      characters.value = basicInfos.map((basicInfo, index) => ({
+        ...basicInfo,
+        ...detailInfos[index],
+      }))
 
       Notify.create({
         type: 'positive',
-        message: `${customCharacters.value.length}명의 캐릭터 정보를 성공적으로 불러왔습니다.`,
+        message: `${characters.value.length}명의 캐릭터 정보를 성공적으로 불러왔습니다.`,
       })
-
     } catch (error) {
       console.error(error)
       Notify.create({
@@ -72,7 +52,7 @@ export const useDnfStore = defineStore('dnf', () => {
   }
 
   return {
-    customCharacters,
+    characters,
     fetchCustomCharacters,
   }
 })
