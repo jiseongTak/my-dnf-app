@@ -5,21 +5,17 @@
       <div class="row q-gutter-md justify-center">
         <div v-for="n in myCharacterList.length" :key="n" style="width: 380px">
           <q-card flat bordered>
-            <q-item>
-              <q-item-section avatar>
-                <q-skeleton type="QAvatar" size="60px" />
-              </q-item-section>
-
-              <q-item-section>
-                <q-item-label>
-                  <q-skeleton type="text" width="40%" />
-                </q-item-label>
-                <q-item-label caption>
-                  <q-skeleton type="text" width="65%" />
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-            <q-skeleton height="60px" square />
+            <q-card-section class="column items-center q-pa-md">
+              <q-skeleton type="QAvatar" size="200px" square class="q-mb-md" />
+              <div class="text-center">
+                <q-skeleton type="text" width="80px" class="q-mb-sm" />
+                <q-skeleton type="text" width="120px" />
+              </div>
+            </q-card-section>
+            <q-separator />
+            <q-card-section class="row q-gutter-xs justify-center q-pa-sm">
+              <q-skeleton v-for="i in 12" :key="i" type="QAvatar" size="40px" square />
+            </q-card-section>
           </q-card>
         </div>
       </div>
@@ -33,11 +29,11 @@
           :key="char.characterId"
           class="character-card"
         >
-          <q-card-section class="row items-center no-wrap">
-            <q-avatar size="60px">
-              <img :src="char.characterImageURL" />
+          <q-card-section class="column items-center q-pa-md">
+            <q-avatar size="200px" square class="q-mb-md">
+              <img :src="char.characterImageURL" :alt="char.characterName" style="image-rendering: pixelated;"/>
             </q-avatar>
-            <div class="q-ml-sm">
+            <div class="text-center">
               <div class="text-weight-bold">{{ char.characterName }}</div>
               <div class="text-caption">
                 {{ char.level }}Lv. | {{ char.jobGrowName }}
@@ -45,14 +41,14 @@
             </div>
           </q-card-section>
           <q-separator />
-          <q-card-section class="row q-gutter-xs justify-center">
+          <q-card-section class="row q-gutter-xs justify-center q-pa-sm">
             <q-avatar
               v-for="equip in char.equipment"
               :key="equip.slotId"
               size="40px"
               square
             >
-              <img :src="equip.itemImageURL" />
+              <img :src="equip.itemImageURL" :alt="equip.itemName" />
               <q-tooltip> {{ equip.itemName }} ({{ equip.slotName }}) </q-tooltip>
             </q-avatar>
           </q-card-section>
@@ -74,7 +70,6 @@ import { useQuasar } from 'quasar'
 const $q = useQuasar()
 const dnfStore = useDnfStore()
 
-// 서버를 'hilder'로 고정합니다.
 const server = 'hilder'
 const myCharacterList = ref([
   '엡손',
@@ -96,7 +91,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .character-card {
   width: 100%;
-  max-width: 380px;
+  max-width: 420px;
   transition: transform 0.2s;
 
   &:hover {

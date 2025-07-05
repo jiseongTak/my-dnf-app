@@ -21,9 +21,9 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
     >
+
       <q-list>
         <q-item-label
           header

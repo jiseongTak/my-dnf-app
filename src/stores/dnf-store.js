@@ -6,7 +6,7 @@ import { Loading, Notify } from 'quasar'
 export const useDnfStore = defineStore('dnf', () => {
   const customCharacters = ref([]) // 사용자 정의 캐릭터 목록을 저장할 상태
 
-  // 새로운 액션: 지정된 캐릭터 목록의 정보를 가져옵니다.
+  // 지정된 캐릭터 목록의 정보를 가져옵니다.
   async function fetchCustomCharacters(server, characterNames) {
     if (!characterNames || characterNames.length === 0) {
       Notify.create({ type: 'warning', message: '조회할 캐릭터가 없습니다.' })
@@ -40,10 +40,20 @@ export const useDnfStore = defineStore('dnf', () => {
       const equipmentResponses = await Promise.all(equipmentPromises)
 
       // 3. 최종적으로 캐릭터 정보와 장비 정보를 합쳐서 상태에 저장합니다.
-      customCharacters.value = charactersWithId.map((char, index) => ({
-        ...char,
-        equipment: equipmentResponses[index].data.equipment,
-      }))
+      customCharacters.value = charactersWithId.map((char, index) => {
+        // 장비 정보에 아이템 이미지 URL 추가
+        const equipmentWithImage = equipmentResponses[index].data.equipment.map(equip => ({
+          ...equip,
+          itemImageURL: `https://img-api.neople.co.kr/df/items/${equip.itemId}`
+        }));
+
+        return {
+          ...char,
+          // 캐릭터 이미지 URL 추가 (zoom=1)
+          characterImageURL: `https://img-api.neople.co.kr/df/servers/${server}/characters/${char.characterId}?zoom=1`,
+          equipment: equipmentWithImage,
+        }
+      })
 
       Notify.create({
         type: 'positive',
