@@ -1,56 +1,106 @@
 <template>
-  <q-page class="q-pa-md column items-center">
-    <div class="q-gutter-md row items-start" style="width: 500px">
-      <q-select
-        v-model="server"
-        :options="serverOptions"
-        label="서버"
-        style="width: 150px"
-      />
-      <q-input
-        v-model="characterName"
-        label="캐릭터명"
-        @keyup.enter="searchCharacter"
-      />
-      <q-btn label="검색" color="primary" @click="searchCharacter" />
+  <q-page class="q-pa-md">
+    <div v-if="isLoading" class="q-mt-md">
+      <div class="text-center text-h6 q-mb-md">힐더 서버 캐릭터 정보 로딩 중...</div>
+      <div class="row q-gutter-md justify-center">
+        <div v-for="n in myCharacterList.length" :key="n" style="width: 380px">
+          <q-card flat bordered>
+            <q-item>
+              <q-item-section avatar>
+                <q-skeleton type="QAvatar" size="60px" />
+              </q-item-section>
+
+              <q-item-section>
+                <q-item-label>
+                  <q-skeleton type="text" width="40%" />
+                </q-item-label>
+                <q-item-label caption>
+                  <q-skeleton type="text" width="65%" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-skeleton height="60px" square />
+          </q-card>
+        </div>
+      </div>
     </div>
 
-    <q-card v-if="dnfStore.character" class="q-mt-xl" style="width: 500px">
-      <q-card-section class="row items-center">
-        <q-avatar size="72px">
-          <img :src="dnfStore.character.characterImageURL" />
-        </q-avatar>
-        <div class="q-ml-md">
-          <div class="text-h6">{{ dnfStore.character.characterName }}</div>
-          <div class="text-subtitle2">
-            {{ dnfStore.character.level }}Lv. | {{ dnfStore.character.jobGrowName }}
-          </div>
-          <div class="text-caption">{{ dnfStore.character.guildName }}</div>
-        </div>
-      </q-card-section>
-    </q-card>
+    <div v-else-if="dnfStore.customCharacters.length > 0" class="q-mt-md">
+      <div class="text-center text-h6 q-mb-md">힐더 서버 캐릭터 장비 현황</div>
+      <div class="row q-gutter-md justify-center">
+        <q-card
+          v-for="char in dnfStore.customCharacters"
+          :key="char.characterId"
+          class="character-card"
+        >
+          <q-card-section class="row items-center no-wrap">
+            <q-avatar size="60px">
+              <img :src="char.characterImageURL" />
+            </q-avatar>
+            <div class="q-ml-sm">
+              <div class="text-weight-bold">{{ char.characterName }}</div>
+              <div class="text-caption">
+                {{ char.level }}Lv. | {{ char.jobGrowName }}
+              </div>
+            </div>
+          </q-card-section>
+          <q-separator />
+          <q-card-section class="row q-gutter-xs justify-center">
+            <q-avatar
+              v-for="equip in char.equipment"
+              :key="equip.slotId"
+              size="40px"
+              square
+            >
+              <img :src="equip.itemImageURL" />
+              <q-tooltip> {{ equip.itemName }} ({{ equip.slotName }}) </q-tooltip>
+            </q-avatar>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
 
-    <div v-else class="q-mt-xl text-grey">캐릭터를 검색해보세요.</div>
+    <div v-else class="text-center text-grey q-mt-xl">
+      힐더 서버에서 캐릭터 정보를 찾을 수 없습니다. API 키나 캐릭터 이름을 확인해주세요.
+    </div>
   </q-page>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useDnfStore } from 'stores/dnf-store' // 방금 만든 스토어 import
+import { ref, computed, onMounted } from 'vue'
+import { useDnfStore } from 'stores/dnf-store'
+import { useQuasar } from 'quasar'
 
-const server = ref('hilder') // 기본 서버 설정
-const characterName = ref('')
+const $q = useQuasar()
 const dnfStore = useDnfStore()
 
-const serverOptions = [
-  { label: '카인', value: 'cain' },
-  { label: '디레지에', value: 'diregie' },
-  { label: '시로코', value: 'siroco' },
-  { label: '힐더', value: 'hilder' },
-  // ... 나머지 서버 추가
-]
+// 서버를 'hilder'로 고정합니다.
+const server = 'hilder'
+const myCharacterList = ref([
+  '엡손',
+  '비그요',
+  '그저어마신',
+  '털잡이X',
+  '비가그쳐요',
+  '활잡이X',
+])
 
-function searchCharacter() {
-  dnfStore.fetchCharacter(server.value, characterName.value)
-}
+const isLoading = computed(() => $q.loading.isActive)
+
+// onMounted: 컴포넌트(페이지)가 로드될 때 자동으로 실행됩니다.
+onMounted(() => {
+  dnfStore.fetchCustomCharacters(server, myCharacterList.value)
+})
 </script>
+
+<style lang="scss" scoped>
+.character-card {
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+</style>
