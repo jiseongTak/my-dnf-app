@@ -59,7 +59,7 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      
+
       vitePlugins: [
         ['vite-plugin-checker', {
           eslint: {
@@ -73,7 +73,14 @@ export default defineConfig((/* ctx */) => {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
       // https: true,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      proxy: {
+        // '/df'로 시작하는 모든 요청을 프록시 처리합니다.
+        '/df': {
+          target: 'https://api.neople.co.kr',
+          changeOrigin: true, // 대상 서버의 출처(origin)를 바꾸도록 설정합니다.
+        },
+      },
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
