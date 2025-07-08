@@ -2,27 +2,19 @@
   <q-page class="q-pa-md">
     <div v-if="isLoading" class="q-mt-md">
       <div class="text-center text-h6 q-mb-md">힐더 서버 캐릭터 정보 로딩 중...</div>
-      <q-card v-for="n in myCharacterList.length" :key="n" class="q-mb-md">
-        <q-card-section horizontal>
-          <q-skeleton height="250px" width="35%" square />
-          <q-card-actions vertical class="justify-around">
-            <q-skeleton type="QBtn" width="100px" />
-            <q-skeleton type="QBtn" width="100px" />
-            <q-skeleton type="QBtn" width="100px" />
-            <q-skeleton type="QBtn" width="100px" />
-          </q-card-actions>
-          <q-card-section class="q-gutter-y-md col">
-            <q-skeleton height="30px" />
-            <q-skeleton height="80px" />
-            <q-skeleton height="40px" />
-          </q-card-section>
-        </q-card-section>
-      </q-card>
     </div>
 
     <div v-else-if="dnfStore.characters.length > 0" class="q-mt-md">
       <div class="text-center text-h5 q-mb-md">캐릭터 정보</div>
-      <CharacterCard v-for="char in dnfStore.characters" :key="char.characterId" :character="char" />
+      <div class="row q-col-gutter-md">
+        <div
+          v-for="char in dnfStore.characters"
+          :key="char.characterId"
+          class="col-12 col-md-6 col-lg-4"
+        >
+          <CharacterCard :character="char" />
+        </div>
+      </div>
     </div>
 
     <div v-else class="text-center text-grey q-mt-xl">
