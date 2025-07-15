@@ -1,0 +1,1511 @@
+{
+  "equipment": [
+    {
+      "slotId": "WEAPON",
+      "slotName": "무기",
+      "itemId": "d4032874bc3abd65cc0abbca610c83ce",
+      "itemName": "태초의 별 - 소태도",
+      "itemTypeId": "4ffb6f14b86f5c818a925bf58022686e",
+      "itemType": "무기",
+      "itemTypeDetailId": "5b4445aa7a1919a8998875d0d02c10aa",
+      "itemTypeDetail": "소태도",
+      "itemAvailableLevel": 115,
+      "itemRarity": "태초",
+      "setItemId": null,
+      "setItemName": null,
+      "reinforce": 13,
+      "itemGradeName": "최상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "수속성강화",
+            "value": 15
+          },
+          {
+            "name": "암속성강화",
+            "value": 15
+          }
+        ]
+      },
+      "amplificationName": null,
+      "refine": 8,
+      "engraveName": true,
+      "tune": [
+        {
+          "level": 0,
+          "upgrade": false,
+          "status": [
+            {
+              "name": "최종 데미지",
+              "value": "350%"
+            }
+          ]
+        },
+        {
+          "name": "새겨진 볕의 기억",
+          "status": [
+            {
+              "name": "최종 데미지",
+              "value": "7%"
+            },
+            {
+              "name": "버프력",
+              "value": 1680
+            }
+          ]
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/d4032874bc3abd65cc0abbca610c83ce"
+    },
+    {
+      "slotId": "TITLE",
+      "slotName": "칭호",
+      "itemId": "7f4a07e6d97b0ffac046d6418c5b6dfb",
+      "itemName": "프로스트의 전설",
+      "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+      "itemType": "액세서리",
+      "itemTypeDetailId": "691933a06ff114348a7db936fb0aec66",
+      "itemTypeDetail": "칭호",
+      "itemAvailableLevel": 1,
+      "itemRarity": "레어",
+      "setItemId": null,
+      "setItemName": null,
+      "reinforce": 0,
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 4
+          },
+          {
+            "name": "힘",
+            "value": 25
+          },
+          {
+            "name": "지능",
+            "value": 25
+          },
+          {
+            "name": "체력",
+            "value": 25
+          },
+          {
+            "name": "정신력",
+            "value": 25
+          }
+        ]
+      },
+      "amplificationName": null,
+      "refine": 0,
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/7f4a07e6d97b0ffac046d6418c5b6dfb"
+    },
+    {
+      "slotId": "JACKET",
+      "slotName": "상의",
+      "itemId": "cf9036c0afd122d6883217ed5b9ce459",
+      "itemName": "고유 - 철면의 폭소 아머",
+      "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+      "itemType": "방어구",
+      "itemTypeDetailId": "3da92241d44bdafcf7554057e6479c83",
+      "itemTypeDetail": "상의",
+      "itemAvailableLevel": 115,
+      "itemRarity": "유니크",
+      "setItemId": null,
+      "setItemName": null,
+      "reinforce": 8,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "최종 데미지",
+            "value": "1%"
+          },
+          {
+            "name": "물리 공격력",
+            "value": 110
+          },
+          {
+            "name": "마법 공격력",
+            "value": 110
+          },
+          {
+            "name": "독립 공격력",
+            "value": 110
+          },
+          {
+            "name": "힘",
+            "value": 90
+          },
+          {
+            "name": "지능",
+            "value": 90
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3000,
+            "explain": "최종 데미지 9% 증가",
+            "explainDetail": "최종 데미지 9% 증가",
+            "buffExplain": "버프력 3000",
+            "buffExplainDetail": "버프력 3000"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "899957aea7f227f881329a228496d0b4",
+        "itemName": "영역 : 폭주하는 마력의 경계",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 0,
+          "upgrade": false,
+          "setPoint": 115
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/cf9036c0afd122d6883217ed5b9ce459"
+    },
+    {
+      "slotId": "SHOULDER",
+      "slotName": "머리어깨",
+      "itemId": "1317ae1cbfce072ddfa2a6ae9cf8b239",
+      "itemName": "가득찬 마력의 영역 어깨",
+      "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+      "itemType": "방어구",
+      "itemTypeDetailId": "f2976a25a516451e3e8667bac328b308",
+      "itemTypeDetail": "머리어깨",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 8,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "힘",
+            "value": 40
+          },
+          {
+            "name": "지능",
+            "value": 40
+          },
+          {
+            "name": "체력",
+            "value": 40
+          },
+          {
+            "name": "정신력",
+            "value": 40
+          },
+          {
+            "name": "물리 공격력",
+            "value": 10
+          },
+          {
+            "name": "마법 공격력",
+            "value": 10
+          },
+          {
+            "name": "독립 공격력",
+            "value": 10
+          },
+          {
+            "name": "물리 크리티컬 히트",
+            "value": "5%"
+          },
+          {
+            "name": "마법 크리티컬 히트",
+            "value": "5%"
+          },
+          {
+            "name": "최종 데미지",
+            "value": "2%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3000,
+            "explain": "최종 데미지 9% 증가",
+            "explainDetail": "최종 데미지 9% 증가",
+            "buffExplain": "버프력 3000",
+            "buffExplainDetail": "버프력 3000"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "d1a4eea31e4dd4e7c1528be7c3de6880",
+        "itemName": "영역 : 폭주하는 마력의 기억",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/1317ae1cbfce072ddfa2a6ae9cf8b239"
+    },
+    {
+      "slotId": "PANTS",
+      "slotName": "하의",
+      "itemId": "0df1839062b9b71a77a312ea9d020004",
+      "itemName": "가득찬 마력의 영역 하의",
+      "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+      "itemType": "방어구",
+      "itemTypeDetailId": "7c4b28699ae7994798289f187d519992",
+      "itemTypeDetail": "하의",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 7,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "물리 공격력",
+            "value": 90
+          },
+          {
+            "name": "마법 공격력",
+            "value": 90
+          },
+          {
+            "name": "독립 공격력",
+            "value": 90
+          },
+          {
+            "name": "힘",
+            "value": 60
+          },
+          {
+            "name": "지능",
+            "value": 60
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3360,
+            "explain": "최종 데미지 11% 증가\n스킬 쿨타임 4% 감소 (각성기 제외)\n물리/마법 피해 감소 +3%\n데미지형 상태이상 내성 +4%",
+            "explainDetail": "최종 데미지 11% 증가\n스킬 쿨타임 4% 감소 (각성기 제외)\n물리/마법 피해 감소 +3%\n데미지형 상태이상 내성 +4%",
+            "buffExplain": "버프력 3360",
+            "buffExplainDetail": "버프력 3360"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "16a8fe829d262ae3447ca77d83cba90c",
+        "itemName": "기품 : 불신이 낳은 집착",
+        "itemRarity": "에픽"
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/0df1839062b9b71a77a312ea9d020004"
+    },
+    {
+      "slotId": "SHOES",
+      "slotName": "신발",
+      "itemId": "3ae1dd27d6fdc59d072c5896dd0526cf",
+      "itemName": "가득찬 마력의 영역 신발",
+      "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+      "itemType": "방어구",
+      "itemTypeDetailId": "ef6fcc3b39b2bbcbf09a71da6cbafe06",
+      "itemTypeDetail": "신발",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 8,
+      "itemGradeName": "최상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "힘",
+            "value": 40
+          },
+          {
+            "name": "지능",
+            "value": 40
+          },
+          {
+            "name": "체력",
+            "value": 40
+          },
+          {
+            "name": "정신력",
+            "value": 40
+          },
+          {
+            "name": "물리 공격력",
+            "value": 10
+          },
+          {
+            "name": "마법 공격력",
+            "value": 10
+          },
+          {
+            "name": "독립 공격력",
+            "value": 10
+          },
+          {
+            "name": "최종 데미지",
+            "value": "2%"
+          },
+          {
+            "name": "물리 크리티컬 히트",
+            "value": "3%"
+          },
+          {
+            "name": "마법 크리티컬 히트",
+            "value": "3%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3360,
+            "explain": "최종 데미지 11% 증가\n스킬 쿨타임 4% 감소 (각성기 제외)\n물리/마법 피해 감소 +3%\n데미지형 상태이상 내성 +4%",
+            "explainDetail": "최종 데미지 11% 증가\n스킬 쿨타임 4% 감소 (각성기 제외)\n물리/마법 피해 감소 +3%\n데미지형 상태이상 내성 +4%",
+            "buffExplain": "버프력 3360",
+            "buffExplainDetail": "버프력 3360"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "8850ecfa2145ebf030623478bd2f4776",
+        "itemName": "기품 : 허울 뿐인 우아함",
+        "itemRarity": "에픽"
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/3ae1dd27d6fdc59d072c5896dd0526cf"
+    },
+    {
+      "slotId": "WAIST",
+      "slotName": "벨트",
+      "itemId": "a3dfb2b25d5a20047b68c9d233c7e630",
+      "itemName": "은은한 마력의 영역 벨트",
+      "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+      "itemType": "방어구",
+      "itemTypeDetailId": "934ed2dea99f55f775df256fc29c5d56",
+      "itemTypeDetail": "벨트",
+      "itemAvailableLevel": 115,
+      "itemRarity": "레전더리",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 7,
+      "itemGradeName": "최하급",
+      "enchant": {
+        "status": [
+          {
+            "name": "힘",
+            "value": 40
+          },
+          {
+            "name": "지능",
+            "value": 40
+          },
+          {
+            "name": "체력",
+            "value": 40
+          },
+          {
+            "name": "정신력",
+            "value": 40
+          },
+          {
+            "name": "물리 공격력",
+            "value": 10
+          },
+          {
+            "name": "마법 공격력",
+            "value": 10
+          },
+          {
+            "name": "독립 공격력",
+            "value": 10
+          },
+          {
+            "name": "최종 데미지",
+            "value": "2%"
+          },
+          {
+            "name": "물리 크리티컬 히트",
+            "value": "3%"
+          },
+          {
+            "name": "마법 크리티컬 히트",
+            "value": "3%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3000,
+            "explain": "최종 데미지 9% 증가",
+            "explainDetail": "최종 데미지 9% 증가",
+            "buffExplain": "버프력 3000",
+            "buffExplainDetail": "버프력 3000"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "8b6902d3fb69193b838cb04716aae6fe",
+        "itemName": "영역 : 폭주하는 마력의 운명",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 165
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/a3dfb2b25d5a20047b68c9d233c7e630"
+    },
+    {
+      "slotId": "AMULET",
+      "slotName": "목걸이",
+      "itemId": "2fb653d00f1b0e3be82d2cf0442c232d",
+      "itemName": "가득찬 마력의 영역 목걸이",
+      "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+      "itemType": "액세서리",
+      "itemTypeDetailId": "390e3966118b0c466ce9f8eae45e1629",
+      "itemTypeDetail": "목걸이",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 8,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 33
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 4350,
+            "explain": "최종 데미지 14% 증가",
+            "explainDetail": "최종 데미지 14% 증가",
+            "buffExplain": "버프력 4350",
+            "buffExplainDetail": "버프력 4350"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "f324ef6b1e82acf145014947ff24e995",
+        "itemName": "영역 : 타오르는 마력의 조율",
+        "itemRarity": "유니크",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 25
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/2fb653d00f1b0e3be82d2cf0442c232d"
+    },
+    {
+      "slotId": "WRIST",
+      "slotName": "팔찌",
+      "itemId": "379a5272caeaace0ab9b7cbf7383d485",
+      "itemName": "은은한 마력의 영역 팔찌",
+      "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+      "itemType": "액세서리",
+      "itemTypeDetailId": "80bddf423629c28c7b4459c328fdffaf",
+      "itemTypeDetail": "팔찌",
+      "itemAvailableLevel": 115,
+      "itemRarity": "레전더리",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 10,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 35
+          },
+          {
+            "name": "최종 데미지",
+            "value": "1%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 3850,
+            "explain": "최종 데미지 11.5% 증가",
+            "explainDetail": "최종 데미지 11.5% 증가",
+            "buffExplain": "버프력 3850",
+            "buffExplainDetail": "버프력 3850"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "15ae2cbf75283020f7b8c1532420c865",
+        "itemName": "영역 : 타오르는 마력의 회로",
+        "itemRarity": "유니크",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 25
+      },
+      "tune": [
+        {
+          "level": 3,
+          "setPoint": 195
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/379a5272caeaace0ab9b7cbf7383d485"
+    },
+    {
+      "slotId": "RING",
+      "slotName": "반지",
+      "itemId": "7dfd210d865f3b98b4521ed97bf0a472",
+      "itemName": "넘치는 마력의 영역 반지",
+      "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+      "itemType": "액세서리",
+      "itemTypeDetailId": "b04c7fb9b29b27b91a0a9e5a1822bc8f",
+      "itemTypeDetail": "반지",
+      "itemAvailableLevel": 115,
+      "itemRarity": "태초",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 10,
+      "itemGradeName": "최상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 35
+          },
+          {
+            "name": "최종 데미지",
+            "value": "1%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 4550,
+            "explain": "최종 데미지 15% 증가\n\n회복 정령의 가호 부여\n- 가호는 대상자에게 회복 제공\n- 초당 HP/MP 0.5%회복",
+            "explainDetail": "최종 데미지 15% 증가\n\n회복 정령의 가호 부여\n- 가호는 대상자에게 회복 제공\n- 초당 HP/MP 0.5%회복",
+            "buffExplain": "버프력 4550",
+            "buffExplainDetail": "버프력 4550"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "e60f017d68b3bf4220da7eea4be727bf",
+        "itemName": "무지 : 망각의 순간",
+        "itemRarity": "유니크"
+      },
+      "tune": [
+        {
+          "level": 0,
+          "upgrade": false,
+          "setPoint": 265
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/7dfd210d865f3b98b4521ed97bf0a472"
+    },
+    {
+      "slotId": "SUPPORT",
+      "slotName": "보조장비",
+      "itemId": "cb098a39b32c2c4da0ac86f42cf02a4a",
+      "itemName": "가득찬 마력의 영역 보조장비",
+      "itemTypeId": "87ff665868ffd50f8aef7948548439bd",
+      "itemType": "추가장비",
+      "itemTypeDetailId": "2fef5d81b7f59f0c75241890a8d941c9",
+      "itemTypeDetail": "보조장비",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 10,
+      "itemGradeName": "최상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "물리 크리티컬 히트",
+            "value": "3.0%"
+          },
+          {
+            "name": "마법 크리티컬 히트",
+            "value": "3.0%"
+          },
+          {
+            "name": "모든 속성 강화",
+            "value": 12
+          },
+          {
+            "name": "공격력 증폭",
+            "value": "3%"
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 4150,
+            "explain": "최종 데미지 14.5% 증가",
+            "explainDetail": "최종 데미지 14.5% 증가",
+            "buffExplain": "버프력 4150",
+            "buffExplainDetail": "버프력 4150"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "245b8473a7de5b9a064798bf8f861928",
+        "itemName": "영역 : 폭주하는 마력의 발현",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/cb098a39b32c2c4da0ac86f42cf02a4a"
+    },
+    {
+      "slotId": "MAGIC_STON",
+      "slotName": "마법석",
+      "itemId": "32fbee66c21edd0e6d442a62b865ab95",
+      "itemName": "미약한 마력의 영역 마법석",
+      "itemTypeId": "87ff665868ffd50f8aef7948548439bd",
+      "itemType": "추가장비",
+      "itemTypeDetailId": "fe5f3db78175f5a3196385c688d29681",
+      "itemTypeDetail": "마법석",
+      "itemAvailableLevel": 115,
+      "itemRarity": "유니크",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 10,
+      "itemGradeName": "최상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 30
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 4150,
+            "explain": "최종 데미지 14.5% 증가",
+            "explainDetail": "최종 데미지 14.5% 증가",
+            "buffExplain": "버프력 4150",
+            "buffExplainDetail": "버프력 4150"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "ea2f32cbf102b7462425b9eb9d01cacb",
+        "itemName": "영역 : 폭주하는 마력의 증폭",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 3,
+          "setPoint": 145
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/32fbee66c21edd0e6d442a62b865ab95"
+    },
+    {
+      "slotId": "EARRING",
+      "slotName": "귀걸이",
+      "itemId": "0633b887c945499e3ca74c68261bbeb2",
+      "itemName": "가득찬 마력의 영역 귀걸이",
+      "itemTypeId": "87ff665868ffd50f8aef7948548439bd",
+      "itemType": "추가장비",
+      "itemTypeDetailId": "601834074c49bb0e48cb65a75a8667bc",
+      "itemTypeDetail": "귀걸이",
+      "itemAvailableLevel": 115,
+      "itemRarity": "에픽",
+      "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+      "setItemName": "마력의 영역 세트",
+      "reinforce": 10,
+      "itemGradeName": "상급",
+      "enchant": {
+        "status": [
+          {
+            "name": "모든 속성 강화",
+            "value": 11
+          },
+          {
+            "name": "힘",
+            "value": 50
+          },
+          {
+            "name": "지능",
+            "value": 50
+          },
+          {
+            "name": "체력",
+            "value": 50
+          },
+          {
+            "name": "정신력",
+            "value": 50
+          }
+        ]
+      },
+      "amplificationName": "차원의 힘",
+      "refine": 0,
+      "fusionOption": {
+        "options": [
+          {
+            "buff": 4150,
+            "explain": "최종 데미지 14.5% 증가",
+            "explainDetail": "최종 데미지 14.5% 증가",
+            "buffExplain": "버프력 4150",
+            "buffExplainDetail": "버프력 4150"
+          }
+        ]
+      },
+      "upgradeInfo": {
+        "itemId": "aaf07f9711087e9ad24971ee96347797",
+        "itemName": "영역 : 폭주하는 마력의 신호",
+        "itemRarity": "에픽",
+        "setItemId": "8e9cb65cb6285d7e2f084f440aa18870",
+        "setItemName": "마력의 영역 세트",
+        "setPoint": 65
+      },
+      "tune": [
+        {
+          "level": 0,
+          "setPoint": 215
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/0633b887c945499e3ca74c68261bbeb2"
+    }
+  ],
+  "avatar": [
+    {
+      "slotId": "HEADGEAR",
+      "slotName": "모자 아바타",
+      "itemId": "7d06b3a6a5973a0bb4ff90c534ba4b94",
+      "itemName": "레어 모자 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "정신력 55 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "붉은빛",
+          "itemId": "c32986b7305411050148f399aa72b6e2",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "붉은빛",
+          "itemId": "c32986b7305411050148f399aa72b6e2",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/7d06b3a6a5973a0bb4ff90c534ba4b94"
+    },
+    {
+      "slotId": "HAIR",
+      "slotName": "머리 아바타",
+      "itemId": "96715668f1188d91d997c65869985e6b",
+      "itemName": "레어 머리 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "정신력 55 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "붉은빛",
+          "itemId": "c32986b7305411050148f399aa72b6e2",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "붉은빛",
+          "itemId": "c32986b7305411050148f399aa72b6e2",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/96715668f1188d91d997c65869985e6b"
+    },
+    {
+      "slotId": "FACE",
+      "slotName": "얼굴 아바타",
+      "itemId": "5be638b9ecd3c484bd16d38da5daf59e",
+      "itemName": "레어 얼굴 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "공격 속도 6.0% 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "노란빛",
+          "itemId": "f7cef7909bebf3d6b28b9a8c3ff6837c",
+          "itemName": "찬란한 노란빛 엠블렘[공격속도]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "노란빛",
+          "itemId": "f7cef7909bebf3d6b28b9a8c3ff6837c",
+          "itemName": "찬란한 노란빛 엠블렘[공격속도]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/5be638b9ecd3c484bd16d38da5daf59e"
+    },
+    {
+      "slotId": "JACKET",
+      "slotName": "상의 아바타",
+      "itemId": "ad6bd2e34635dd78680bad237225b6ac",
+      "itemName": "레어 상의 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "소태도 마스터리 스킬Lv +1",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "플래티넘",
+          "itemId": "44f74ee93435d7074b6c27c1f3665d58",
+          "itemName": "플래티넘 엠블렘[소태도 마스터리]",
+          "itemRarity": "레전더리"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "녹색빛",
+          "itemId": "0240f74962933e89731720eb18c373de",
+          "itemName": "찬란한 녹색빛 엠블렘[물리크리티컬]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 3,
+          "slotColor": "녹색빛",
+          "itemId": "0240f74962933e89731720eb18c373de",
+          "itemName": "찬란한 녹색빛 엠블렘[물리크리티컬]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/ad6bd2e34635dd78680bad237225b6ac"
+    },
+    {
+      "slotId": "PANTS",
+      "slotName": "하의 아바타",
+      "itemId": "c24372ebcc952474d21bf7f977533ae7",
+      "itemName": "레어 하의 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "MP MAX 400 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "플래티넘",
+          "itemId": "44f74ee93435d7074b6c27c1f3665d58",
+          "itemName": "플래티넘 엠블렘[소태도 마스터리]",
+          "itemRarity": "레전더리"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "녹색빛",
+          "itemId": "0240f74962933e89731720eb18c373de",
+          "itemName": "찬란한 녹색빛 엠블렘[물리크리티컬]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 3,
+          "slotColor": "녹색빛",
+          "itemId": "0240f74962933e89731720eb18c373de",
+          "itemName": "찬란한 녹색빛 엠블렘[물리크리티컬]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/c24372ebcc952474d21bf7f977533ae7"
+    },
+    {
+      "slotId": "SHOES",
+      "slotName": "신발 아바타",
+      "itemId": "b2805465e8c38b37be145006fa2ab9b0",
+      "itemName": "레어 신발 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "힘 55 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "푸른빛",
+          "itemId": "0a301552ed95d237ac44122eac288166",
+          "itemName": "찬란한 푸른빛 엠블렘[이동속도]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "푸른빛",
+          "itemId": "0a301552ed95d237ac44122eac288166",
+          "itemName": "찬란한 푸른빛 엠블렘[이동속도]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/b2805465e8c38b37be145006fa2ab9b0"
+    },
+    {
+      "slotId": "BREAST",
+      "slotName": "목가슴 아바타",
+      "itemId": "1ab5dfd403b7d4ddae969e8e07174538",
+      "itemName": "레어 목가슴 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "공격 속도 6.0% 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "노란빛",
+          "itemId": "f7cef7909bebf3d6b28b9a8c3ff6837c",
+          "itemName": "찬란한 노란빛 엠블렘[공격속도]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "노란빛",
+          "itemId": "f7cef7909bebf3d6b28b9a8c3ff6837c",
+          "itemName": "찬란한 노란빛 엠블렘[공격속도]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/1ab5dfd403b7d4ddae969e8e07174538"
+    },
+    {
+      "slotId": "WAIST",
+      "slotName": "허리 아바타",
+      "itemId": "edd395a4ec38c914cdcb62daf1e8b15f",
+      "itemName": "레어 허리 클론 아바타",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "회피율 5.5% 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "푸른빛",
+          "itemId": "0a301552ed95d237ac44122eac288166",
+          "itemName": "찬란한 푸른빛 엠블렘[이동속도]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "푸른빛",
+          "itemId": "0a301552ed95d237ac44122eac288166",
+          "itemName": "찬란한 푸른빛 엠블렘[이동속도]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/edd395a4ec38c914cdcb62daf1e8b15f"
+    },
+    {
+      "slotId": "SKIN",
+      "slotName": "스킨 아바타",
+      "itemId": "ca8b660608494e340ef00ba7e9dcadb4",
+      "itemName": "워터밤 페스타 고구맛빛 피부[A타입]",
+      "itemRarity": "커먼",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": "물리 방어력 1000 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "다색",
+          "itemId": "7cc772e864bb9f1c1d75ce954928d6fd",
+          "itemName": "화려한 붉은빛 엠블렘[힘]",
+          "itemRarity": "레어"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "다색",
+          "itemId": "7cc772e864bb9f1c1d75ce954928d6fd",
+          "itemName": "화려한 붉은빛 엠블렘[힘]",
+          "itemRarity": "레어"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/ca8b660608494e340ef00ba7e9dcadb4"
+    },
+    {
+      "slotId": "AURORA",
+      "slotName": "오라 아바타",
+      "itemId": "e2d3fc083f256d83ff19df610c0dfb14",
+      "itemName": "삼신기의 불꽃",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": null,
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "다색",
+          "itemId": "bd1b5a935ec9aefd8fdc296b1cac3930",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "다색",
+          "itemId": "bd1b5a935ec9aefd8fdc296b1cac3930",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/e2d3fc083f256d83ff19df610c0dfb14"
+    },
+    {
+      "slotId": "WEAPON",
+      "slotName": "무기 아바타",
+      "itemId": "3c851651a32fa9504a48609453e92a40",
+      "itemName": "무기 클론 아바타",
+      "itemRarity": "커먼",
+      "clone": {
+        "itemId": "f0aa2f1629f4cd78e203f5c2bc86c1d0",
+        "itemName": "노네임"
+      },
+      "optionAbility": "힘 45 증가",
+      "emblems": [
+        {
+          "slotNo": 1,
+          "slotColor": "다색",
+          "itemId": "885e740677ed897da9e41935f11593cd",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        },
+        {
+          "slotNo": 2,
+          "slotColor": "다색",
+          "itemId": "885e740677ed897da9e41935f11593cd",
+          "itemName": "찬란한 붉은빛 엠블렘[힘]",
+          "itemRarity": "유니크"
+        }
+      ],
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/3c851651a32fa9504a48609453e92a40"
+    },
+    {
+      "slotId": "AURA_SKIN",
+      "slotName": "오라 스킨 아바타",
+      "itemId": "22ab85c6ae39f606f590f780207359e7",
+      "itemName": "새겨진 기억 속의 경계",
+      "itemRarity": "레어",
+      "clone": {
+        "itemId": null,
+        "itemName": null
+      },
+      "optionAbility": null,
+      "emblems": null,
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/22ab85c6ae39f606f590f780207359e7"
+    }
+  ],
+  "creature": {
+    "itemId": "b2358abfe3ea375267720b1a9d3dd598",
+    "itemName": "SD 흰 구름 전령 에를리히",
+    "itemRarity": "레어",
+    "clone": {
+      "itemId": null,
+      "itemName": null
+    },
+    "artifact": [
+      {
+        "slotColor": "RED",
+        "itemId": "3ee12328464a76df4cf08de4b9e23d93",
+        "itemName": "[이벤트]얼어붙은 황혼의 공명",
+        "itemAvailableLevel": 0,
+        "itemRarity": "유니크",
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/3ee12328464a76df4cf08de4b9e23d93"
+      },
+      {
+        "slotColor": "BLUE",
+        "itemId": "eb3d7518e3a8a36bd19ef6dbb5091721",
+        "itemName": "[이벤트]얼어붙은 영원의 달빛",
+        "itemAvailableLevel": 0,
+        "itemRarity": "유니크",
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/eb3d7518e3a8a36bd19ef6dbb5091721"
+      },
+      {
+        "slotColor": "GREEN",
+        "itemId": "34f16cff295079c49024a65a5efc0add",
+        "itemName": "[이벤트]빛을 머금은 이슬",
+        "itemAvailableLevel": 0,
+        "itemRarity": "유니크",
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/34f16cff295079c49024a65a5efc0add"
+      }
+    ],
+    "itemImageURL": "https://img-api.neople.co.kr/df/items/b2358abfe3ea375267720b1a9d3dd598"
+  },
+  "buffSkill": {
+    "skillInfo": {
+      "skillId": "fc7a3f4c2852c832a2f20af63d5d212f",
+      "name": "임무 시작",
+      "option": {
+        "level": 20,
+        "desc": "지속 시간 : {value1}초\n기본/스킬 공격력 증가율 : {value2}%",
+        "values": [
+          "-",
+          "105"
+        ]
+      }
+    },
+    "equipment": [
+      {
+        "slotId": "WEAPON",
+        "slotName": "무기",
+        "itemId": "460af3e6eccdf520fef02709991707cb",
+        "itemName": "짙은 심연의 편린 소태도 : 임무시작",
+        "itemTypeId": "4ffb6f14b86f5c818a925bf58022686e",
+        "itemType": "무기",
+        "itemTypeDetailId": "5b4445aa7a1919a8998875d0d02c10aa",
+        "itemTypeDetail": "소태도",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/460af3e6eccdf520fef02709991707cb"
+      },
+      {
+        "slotId": "TITLE",
+        "slotName": "칭호",
+        "itemId": "7a5b7092305315d7fe1fb377ddb97064",
+        "itemName": "단진의 완벽한 휴가[버프 강화]",
+        "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+        "itemType": "액세서리",
+        "itemTypeDetailId": "691933a06ff114348a7db936fb0aec66",
+        "itemTypeDetail": "칭호",
+        "itemAvailableLevel": 1,
+        "itemRarity": "레어",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/7a5b7092305315d7fe1fb377ddb97064"
+      },
+      {
+        "slotId": "JACKET",
+        "slotName": "상의",
+        "itemId": "2a781b7b8d5beee405ddc06894b8e1b2",
+        "itemName": "짙은 심연의 편린 상의 : 임무시작",
+        "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+        "itemType": "방어구",
+        "itemTypeDetailId": "3da92241d44bdafcf7554057e6479c83",
+        "itemTypeDetail": "상의",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/2a781b7b8d5beee405ddc06894b8e1b2"
+      },
+      {
+        "slotId": "SHOULDER",
+        "slotName": "머리어깨",
+        "itemId": "63bc1779df8df391036f1cee14ecc137",
+        "itemName": "짙은 심연의 편린 어깨 : 임무시작",
+        "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+        "itemType": "방어구",
+        "itemTypeDetailId": "f2976a25a516451e3e8667bac328b308",
+        "itemTypeDetail": "머리어깨",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/63bc1779df8df391036f1cee14ecc137"
+      },
+      {
+        "slotId": "PANTS",
+        "slotName": "하의",
+        "itemId": "857fe3fb9e203cd478c8b2954f268182",
+        "itemName": "짙은 심연의 편린 하의 : 임무시작",
+        "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+        "itemType": "방어구",
+        "itemTypeDetailId": "7c4b28699ae7994798289f187d519992",
+        "itemTypeDetail": "하의",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/857fe3fb9e203cd478c8b2954f268182"
+      },
+      {
+        "slotId": "SHOES",
+        "slotName": "신발",
+        "itemId": "530ccb2afbc09e5df67bdee878161208",
+        "itemName": "짙은 심연의 편린 신발 : 임무시작",
+        "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+        "itemType": "방어구",
+        "itemTypeDetailId": "ef6fcc3b39b2bbcbf09a71da6cbafe06",
+        "itemTypeDetail": "신발",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/530ccb2afbc09e5df67bdee878161208"
+      },
+      {
+        "slotId": "WAIST",
+        "slotName": "벨트",
+        "itemId": "e6454b24c91bdf5b5ac2216c4beda78c",
+        "itemName": "짙은 심연의 편린 벨트 : 임무시작",
+        "itemTypeId": "b09752bfff1935188ea2735cd925a872",
+        "itemType": "방어구",
+        "itemTypeDetailId": "934ed2dea99f55f775df256fc29c5d56",
+        "itemTypeDetail": "벨트",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/e6454b24c91bdf5b5ac2216c4beda78c"
+      },
+      {
+        "slotId": "AMULET",
+        "slotName": "목걸이",
+        "itemId": "8fb3c93f4b4364fbb1a7f5d2453c480a",
+        "itemName": "짙은 심연의 편린 목걸이 : 임무시작",
+        "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+        "itemType": "액세서리",
+        "itemTypeDetailId": "390e3966118b0c466ce9f8eae45e1629",
+        "itemTypeDetail": "목걸이",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/8fb3c93f4b4364fbb1a7f5d2453c480a"
+      },
+      {
+        "slotId": "WRIST",
+        "slotName": "팔찌",
+        "itemId": "3173692c530f13f3a214d41de2ee115e",
+        "itemName": "짙은 심연의 편린 팔찌 : 임무시작",
+        "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+        "itemType": "액세서리",
+        "itemTypeDetailId": "80bddf423629c28c7b4459c328fdffaf",
+        "itemTypeDetail": "팔찌",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/3173692c530f13f3a214d41de2ee115e"
+      },
+      {
+        "slotId": "RING",
+        "slotName": "반지",
+        "itemId": "24cfeedfeda1b8015e626f03e23b8605",
+        "itemName": "짙은 심연의 편린 반지 : 임무시작",
+        "itemTypeId": "e490f8cce6bacd43bef1e2f5e0c4943d",
+        "itemType": "액세서리",
+        "itemTypeDetailId": "b04c7fb9b29b27b91a0a9e5a1822bc8f",
+        "itemTypeDetail": "반지",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/24cfeedfeda1b8015e626f03e23b8605"
+      },
+      {
+        "slotId": "SUPPORT",
+        "slotName": "보조장비",
+        "itemId": "4f62b0ff78ab911dd6823bc3e68ce088",
+        "itemName": "짙은 뒤틀린 심연의 완장 : 임무시작",
+        "itemTypeId": "87ff665868ffd50f8aef7948548439bd",
+        "itemType": "추가장비",
+        "itemTypeDetailId": "2fef5d81b7f59f0c75241890a8d941c9",
+        "itemTypeDetail": "보조장비",
+        "itemAvailableLevel": 100,
+        "itemRarity": "유니크",
+        "setItemId": null,
+        "setItemName": null,
+        "reinforce": 0,
+        "amplificationName": null,
+        "refine": 0,
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/4f62b0ff78ab911dd6823bc3e68ce088"
+      }
+    ],
+    "avatar": [
+      {
+        "slotId": "JACKET",
+        "slotName": "상의 아바타",
+        "itemId": "ad6bd2e34635dd78680bad237225b6ac",
+        "itemName": "레어 상의 클론 아바타",
+        "itemRarity": "레어",
+        "clone": {
+          "itemId": null,
+          "itemName": null
+        },
+        "optionAbility": "임무 시작 스킬Lv +1",
+        "emblems": [
+          {
+            "slotNo": 1,
+            "slotColor": "플래티넘",
+            "itemId": "464bf74fd174a6f7fa68979b75236537",
+            "itemName": "플래티넘 엠블렘[임무 시작]",
+            "itemRarity": "레전더리"
+          }
+        ],
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/ad6bd2e34635dd78680bad237225b6ac"
+      },
+      {
+        "slotId": "PANTS",
+        "slotName": "하의 아바타",
+        "itemId": "c24372ebcc952474d21bf7f977533ae7",
+        "itemName": "레어 하의 클론 아바타",
+        "itemRarity": "레어",
+        "clone": {
+          "itemId": null,
+          "itemName": null
+        },
+        "optionAbility": "HP MAX 400 증가",
+        "emblems": [
+          {
+            "slotNo": 1,
+            "slotColor": "플래티넘",
+            "itemId": "464bf74fd174a6f7fa68979b75236537",
+            "itemName": "플래티넘 엠블렘[임무 시작]",
+            "itemRarity": "레전더리"
+          }
+        ],
+        "itemImageURL": "https://img-api.neople.co.kr/df/items/c24372ebcc952474d21bf7f977533ae7"
+      }
+    ],
+    "creature": {
+      "itemId": "c57f69064349ca357b6914256c4e5ce0",
+      "itemName": "18주년 SD 히만 스텔라",
+      "itemRarity": "레어",
+      "enchant": null,
+      "itemImageURL": "https://img-api.neople.co.kr/df/items/c57f69064349ca357b6914256c4e5ce0"
+    }
+  },
+  "serverId": "hilder",
+  "characterId": "9068a384918296456d48d78a59af28d0",
+  "characterName": "엡손",
+  "level": 115,
+  "jobId": "986c2b3d72ee0e4a0b7fcfbe786d4e02",
+  "jobGrowId": "618326026de1a1f1cfba5dbd0b8396e7",
+  "jobName": "총검사",
+  "jobGrowName": "眞 요원",
+  "fame": 73253,
+  "characterImageURL": "https://img-api.neople.co.kr/df/servers/hilder/characters/9068a384918296456d48d78a59af28d0?zoom=1",
+  "timestamp": 1751959486241
+}
